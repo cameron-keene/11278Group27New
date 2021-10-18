@@ -1,8 +1,8 @@
 //
-//  FishData.swift
+//  FavFishView.swift
 //  Fish Friendly
 //
-//  Created by Sijia Li on 10/14/21.
+//  Created by Sijia Li on 10/18/21.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-struct FishSearchView: View {
+struct FavFishView: View {
     
     init() {
         //Use this if NavigationBarTitle is with Large Font
@@ -42,7 +42,7 @@ struct FishSearchView: View {
                     SearchBarView(text: .constant(""))
                     
                     MultiIconView()
-                        .navigationTitle("Search Fish")
+                        .navigationTitle("Favorite Fish")
                         .toolbar {
                             ToolbarItem(placement: .navigationBarLeading) {
                                 Button(action: {
@@ -64,8 +64,9 @@ struct FishSearchView: View {
     }
 }
 
-struct FishSearchView_Preview: PreviewProvider {
+struct FavFishView_Previews: PreviewProvider {
     static var previews: some View {
-        FishSearchView()
+        FavFishView()
     }
 }
+

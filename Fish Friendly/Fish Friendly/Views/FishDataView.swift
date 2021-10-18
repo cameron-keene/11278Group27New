@@ -36,9 +36,7 @@ struct FishData: View {
                     Text("Environmental Status: " + "Endangered")
                         .font(.title3)
                         //.font(.bold)
-                    
-                        
-                    
+  
                     Text("Water Habitat: " + "Saltwater")
                         .font(.title3)
                     
@@ -50,25 +48,23 @@ struct FishData: View {
                     
                     Text("Description")
                         .font(.title3)
-                    
-                    
-                    
-                    
-                    
-                    /*Text("Fish Name")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .bold()
-                    
-                    Text("Scientific Fish Name")
-                        .font(.footnote)*/
                 }
                 .offset(x:10 , y: 10)
                 
-                //.background(Color.blue)
-                .navigationBarTitle("Fish Name")
-                .toolbar {
-                    Button("Back") {}
+                
+                
+
+            }
+            .navigationTitle("Fish Name")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        withAnimation {
+                        }
+                    }, label: {
+                        Image(systemName: "chevron.compact.left")
+                    })
+                    
                 }
             }
         }
