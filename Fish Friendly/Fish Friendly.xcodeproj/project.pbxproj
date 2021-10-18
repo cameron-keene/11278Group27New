@@ -18,6 +18,11 @@
 		3328DC372719249B00FEE422 /* FishSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC362719249B00FEE422 /* FishSearchView.swift */; };
 		3328DC392719291900FEE422 /* IndividualFish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC382719291900FEE422 /* IndividualFish.swift */; };
 		3328DC3B27192A0000FEE422 /* FishImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC3A27192A0000FEE422 /* FishImage.swift */; };
+		338D9863271D29D400982FAE /* FavFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D9862271D29D400982FAE /* FavFishView.swift */; };
+		33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E32271D0DF400827899 /* FishIconView.swift */; };
+		33DD1E35271D12BC00827899 /* MultiIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E34271D12BC00827899 /* MultiIconView.swift */; };
+		33DD1E37271D153200827899 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E36271D153200827899 /* SearchBarView.swift */; };
+		33DD1E39271D182D00827899 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E38271D182D00827899 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		3328DC362719249B00FEE422 /* FishSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishSearchView.swift; sourceTree = "<group>"; };
 		3328DC382719291900FEE422 /* IndividualFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFish.swift; sourceTree = "<group>"; };
 		3328DC3A27192A0000FEE422 /* FishImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishImage.swift; sourceTree = "<group>"; };
+		338D9862271D29D400982FAE /* FavFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFishView.swift; sourceTree = "<group>"; };
+		33DD1E32271D0DF400827899 /* FishIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIconView.swift; sourceTree = "<group>"; };
+		33DD1E34271D12BC00827899 /* MultiIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiIconView.swift; sourceTree = "<group>"; };
+		33DD1E36271D153200827899 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		33DD1E38271D182D00827899 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +155,15 @@
 			isa = PBXGroup;
 			children = (
 				3328DC062717671100FEE422 /* ContentView.swift */,
+				3328DC342718F12400FEE422 /* BottomTabView.swift */,
+				33DD1E38271D182D00827899 /* HomeView.swift */,
+				3328DC362719249B00FEE422 /* FishSearchView.swift */,
 				3328DC3A27192A0000FEE422 /* FishImage.swift */,
 				3328DC302718E5B200FEE422 /* FishDataView.swift */,
-				3328DC342718F12400FEE422 /* BottomTabView.swift */,
-				3328DC362719249B00FEE422 /* FishSearchView.swift */,
+				33DD1E32271D0DF400827899 /* FishIconView.swift */,
+				33DD1E36271D153200827899 /* SearchBarView.swift */,
+				33DD1E34271D12BC00827899 /* MultiIconView.swift */,
+				338D9862271D29D400982FAE /* FavFishView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,9 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DD1E37271D153200827899 /* SearchBarView.swift in Sources */,
 				3328DC072717671100FEE422 /* ContentView.swift in Sources */,
+				338D9863271D29D400982FAE /* FavFishView.swift in Sources */,
 				3328DC352718F12400FEE422 /* BottomTabView.swift in Sources */,
+				33DD1E35271D12BC00827899 /* MultiIconView.swift in Sources */,
 				3328DC392719291900FEE422 /* IndividualFish.swift in Sources */,
+				33DD1E39271D182D00827899 /* HomeView.swift in Sources */,
+				33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */,
 				3328DC3B27192A0000FEE422 /* FishImage.swift in Sources */,
 				3328DC312718E5B200FEE422 /* FishDataView.swift in Sources */,
 				3328DC372719249B00FEE422 /* FishSearchView.swift in Sources */,

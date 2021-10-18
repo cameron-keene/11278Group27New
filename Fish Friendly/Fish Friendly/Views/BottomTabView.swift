@@ -9,39 +9,42 @@ import SwiftUI
 
 struct BottomTabView: View {
     init() {
-        UITabBar.appearance().barTintColor = UIColor.black
+        UITabBar.appearance().barTintColor = UIColor.seaBlue
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+
         //UITabBar.appearance().tintColor = .green
         
     }
     var body: some View {
-        TabView{
-            Text("Home")
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-            Text("Search")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-            
-            
-            Text("Favorites")
-                .tabItem {
-                    Image(systemName: "star.fill")
-                    Text("Favorites")
-                }
-            
-            Text("Setting")
-                .tabItem {
-                    Image(systemName: "gear")
-                    Text("Settings")
-                        .accentColor(.white)
+        VStack {
+            TabView{
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+                FishSearchView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Search")
+                    }
+                FavFishView()
+                    .tabItem {
+                        Image(systemName: "star.fill")
+                        Text("Favorites")
+                    }
+                
+                Text("Setting")
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("Settings")
+                            .accentColor(.white)
 
-                }
+                    }
+            }
+            .accentColor(.white)
+                
         }
-        .accentColor(.white)
     }
 }
 

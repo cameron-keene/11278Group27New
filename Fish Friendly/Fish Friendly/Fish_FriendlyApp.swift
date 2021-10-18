@@ -15,3 +15,12 @@ struct Fish_FriendlyApp: App {
         }
     }
 }
+
+
+extension Color {
+    static let seaBlue = Color(red: 119/255, green: 158/255, blue: 203/255)
+}
+extension UIColor {
+    static let seaBlue = UIColor(red: 119/255, green: 158/255, blue: 203/255, alpha:1.0)
+}
+
