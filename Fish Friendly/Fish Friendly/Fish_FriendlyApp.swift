@@ -42,3 +42,20 @@ class Theme {
         UINavigationBar.appearance().tintColor = tintColor ?? titleColor ?? .black
     }
 }
+
+func random(_ n:Int) -> Int {
+    return Int(arc4random_uniform(UInt32(n)))
+}
+
+/*func getImage() {
+    let url = NSURL(string: "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=\(placeName)")
+    let request = NSURLRequest(URL: url!)
+    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()){ (response, go, error) -> Void in
+    let go = NSJSONSerialization.JSONObjectWithData(go, options: NSJSONReadingOptions.AllowFragments, error: nil) as [String:AnyObject]
+        let responseData = go["responseData"] as [String:AnyObject]
+        // let results = responseData["results"] as [String:AnyObject]
+        // let imageURL = results["unescapedUrl"] as String
+        println(responseData)
+}
+}
+*/

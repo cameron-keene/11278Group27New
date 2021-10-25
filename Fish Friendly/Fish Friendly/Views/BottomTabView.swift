@@ -34,13 +34,13 @@ struct BottomTabView: View {
                         Text("Favorites")
                     }
                 
-                FishDataView(fishie: fishies[0])
+                /*FishDataView(fishie: fishies[0])
                     .tabItem {
                         Image(systemName: "gear")
                         Text("Settings")
                             .accentColor(.white)
 
-                    }
+                    }*/
             }
             .accentColor(.white)
                 
