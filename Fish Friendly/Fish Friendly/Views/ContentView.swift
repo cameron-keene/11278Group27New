@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+        
     var body: some View {
         BottomTabView()
     }
@@ -18,3 +19,10 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+/*class ViewController: UIViewController {
+    override func viewDidLoad() {
+        let data = Dataloader().fishies
+        print(data)
+    }
+}*/

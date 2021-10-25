@@ -37,9 +37,18 @@ struct HomeView: View {
                         .bold()
                     
                     HStack{
-                        FishIconView(image: Image("SampleFish"))
-                        FishIconView(image: Image("SampleFish"))
-                        FishIconView(image: Image("SampleFish"))
+                        NavigationLink(destination: FishDataView(fishie: fishies[1])) {
+                            FishIconView(fishie: fishies[1])
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        NavigationLink(destination: FishDataView(fishie: fishies[2])) {
+                            FishIconView(fishie: fishies[2])
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        NavigationLink(destination: FishDataView(fishie: fishies[3])) {
+                            FishIconView(fishie: fishies[3])
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     
                     Divider()

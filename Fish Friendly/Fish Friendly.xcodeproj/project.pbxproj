@@ -16,9 +16,11 @@
 		3328DC312718E5B200FEE422 /* FishDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC302718E5B200FEE422 /* FishDataView.swift */; };
 		3328DC352718F12400FEE422 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC342718F12400FEE422 /* BottomTabView.swift */; };
 		3328DC372719249B00FEE422 /* FishSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC362719249B00FEE422 /* FishSearchView.swift */; };
-		3328DC392719291900FEE422 /* IndividualFish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC382719291900FEE422 /* IndividualFish.swift */; };
 		3328DC3B27192A0000FEE422 /* FishImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328DC3A27192A0000FEE422 /* FishImage.swift */; };
 		33700D53272732A9007C529F /* fish_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 33700D52272732A9007C529F /* fish_data.json */; };
+		33700D57272734D8007C529F /* Fishies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33700D56272734D8007C529F /* Fishies.swift */; };
+		33700D59272734EA007C529F /* ImportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33700D58272734EA007C529F /* ImportData.swift */; };
+		33700D5B272745A4007C529F /* FishIconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33700D5A272745A4007C529F /* FishIconImage.swift */; };
 		338D9863271D29D400982FAE /* FavFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D9862271D29D400982FAE /* FavFishView.swift */; };
 		33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E32271D0DF400827899 /* FishIconView.swift */; };
 		33DD1E35271D12BC00827899 /* MultiIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E34271D12BC00827899 /* MultiIconView.swift */; };
@@ -59,9 +61,11 @@
 		3328DC302718E5B200FEE422 /* FishDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDataView.swift; sourceTree = "<group>"; };
 		3328DC342718F12400FEE422 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		3328DC362719249B00FEE422 /* FishSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishSearchView.swift; sourceTree = "<group>"; };
-		3328DC382719291900FEE422 /* IndividualFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFish.swift; sourceTree = "<group>"; };
 		3328DC3A27192A0000FEE422 /* FishImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishImage.swift; sourceTree = "<group>"; };
 		33700D52272732A9007C529F /* fish_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fish_data.json; sourceTree = "<group>"; };
+		33700D56272734D8007C529F /* Fishies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fishies.swift; sourceTree = "<group>"; };
+		33700D58272734EA007C529F /* ImportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportData.swift; sourceTree = "<group>"; };
+		33700D5A272745A4007C529F /* FishIconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIconImage.swift; sourceTree = "<group>"; };
 		338D9862271D29D400982FAE /* FavFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFishView.swift; sourceTree = "<group>"; };
 		33DD1E32271D0DF400827899 /* FishIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIconView.swift; sourceTree = "<group>"; };
 		33DD1E34271D12BC00827899 /* MultiIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiIconView.swift; sourceTree = "<group>"; };
@@ -117,10 +121,11 @@
 		3328DC032717671100FEE422 /* Fish Friendly */ = {
 			isa = PBXGroup;
 			children = (
+				3328DC042717671100FEE422 /* Fish_FriendlyApp.swift */,
+				33700D52272732A9007C529F /* fish_data.json */,
+				33700D5527273478007C529F /* Model */,
 				3328DC2F2717686400FEE422 /* Views */,
 				33700D4F27273151007C529F /* Data */,
-				3328DC042717671100FEE422 /* Fish_FriendlyApp.swift */,
-				3328DC382719291900FEE422 /* IndividualFish.swift */,
 				3328DC082717671200FEE422 /* Assets.xcassets */,
 				3328DC0D2717671200FEE422 /* Info.plist */,
 				3328DC0A2717671200FEE422 /* Preview Content */,
@@ -162,6 +167,7 @@
 				33DD1E38271D182D00827899 /* HomeView.swift */,
 				3328DC362719249B00FEE422 /* FishSearchView.swift */,
 				3328DC3A27192A0000FEE422 /* FishImage.swift */,
+				33700D5A272745A4007C529F /* FishIconImage.swift */,
 				3328DC302718E5B200FEE422 /* FishDataView.swift */,
 				33DD1E32271D0DF400827899 /* FishIconView.swift */,
 				33DD1E36271D153200827899 /* SearchBarView.swift */,
@@ -174,9 +180,17 @@
 		33700D4F27273151007C529F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				33700D52272732A9007C529F /* fish_data.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		33700D5527273478007C529F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33700D56272734D8007C529F /* Fishies.swift */,
+				33700D58272734EA007C529F /* ImportData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +327,12 @@
 				3328DC072717671100FEE422 /* ContentView.swift in Sources */,
 				338D9863271D29D400982FAE /* FavFishView.swift in Sources */,
 				3328DC352718F12400FEE422 /* BottomTabView.swift in Sources */,
+				33700D57272734D8007C529F /* Fishies.swift in Sources */,
 				33DD1E35271D12BC00827899 /* MultiIconView.swift in Sources */,
-				3328DC392719291900FEE422 /* IndividualFish.swift in Sources */,
+				33700D59272734EA007C529F /* ImportData.swift in Sources */,
 				33DD1E39271D182D00827899 /* HomeView.swift in Sources */,
 				33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */,
+				33700D5B272745A4007C529F /* FishIconImage.swift in Sources */,
 				3328DC3B27192A0000FEE422 /* FishImage.swift in Sources */,
 				3328DC312718E5B200FEE422 /* FishDataView.swift in Sources */,
 				3328DC372719249B00FEE422 /* FishSearchView.swift in Sources */,

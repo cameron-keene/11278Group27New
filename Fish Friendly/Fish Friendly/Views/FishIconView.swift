@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct FishIconView: View {
-    var image: Image
+    var fishie: Fishie
+    //var image: Image
     
     var body: some View {
         ZStack {
@@ -40,14 +41,17 @@ struct FishIconView: View {
                 }
                 
                 
-                image
-                    .resizable()   //lets image resize
+                //image
+                //FishImage(image: Image("SampleFish"))
+                //image: Image("SampleFish")
+                FishIconImage(image: Image("SampleFish"))
+                    //.resizable()   //lets image resize
                     .frame(width: 90, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .offset(y: -5)
+                    //.offset(y: -5)
                 
                 
-                Text("Fish Name")
-                    .font(.custom("Noteworthy", size: 15))
+                Text(fishie.fish_name)
+                    .font(.custom("Noteworthy", size: 13))
                     .offset(y: -20)
                 
                 
@@ -63,6 +67,8 @@ struct FishIconView: View {
 
 struct FishIconView_Previews: PreviewProvider {
     static var previews: some View {
-        FishIconView(image: Image("SampleFish"))
+        FishIconView(fishie: fishies[1])
+
+        //FishIconView(image: Image("SampleFish"))
     }
 }
