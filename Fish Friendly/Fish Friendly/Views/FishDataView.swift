@@ -8,20 +8,18 @@
 import SwiftUI
 
 
+struct FishDataView: View {
+    var fishie: Fishie
 
-
-struct FishData: View {
+    
     var body: some View {
-        NavigationView {
             ScrollView {
-                
-                Text("Scientific Name")
+                /*Text(fishie.fish_scientific)
                     .font(.subheadline)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.secondary)*/
                     
                 
-                
-                Divider()
+                //Divider()
                 
                 
                 HStack() {
@@ -30,10 +28,17 @@ struct FishData: View {
                     //Spacer()
                 }
                 .offset(y:5)
+                .padding()
                 
                 
                 VStack(alignment: .leading) {
-                    Text("Environmental Status: " + "Endangered")
+                    Text(fishie.fish_scientific)
+                        .font(.title2)
+                        .foregroundColor(.seaBlue)
+
+                        //.foregroundColor(.secondary)
+                    
+                    Text("Environmental Status: " + fishie.fish_status)
                         .font(.title3)
                         //.font(.bold)
   
@@ -42,21 +47,34 @@ struct FishData: View {
                     
                     Divider()
                     
-                    Text("Description:")
+                    Text("Fish Habitat:")
                         .font(.title3)
                     
                     
-                    Text("Description")
+                    Text(fishie.fish_habitat)
+                        //.multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        //.frame(maxWidth: 150, maxHeight: .infinity)
+                        .padding(1)
+                    
+                    
+                    Text("Fish Behavior:")
                         .font(.title3)
+                    
+                    
+                    Text(fishie.fish_behavior)
+                        .padding(1)
+                    
                 }
-                .offset(x:10 , y: 10)
+                .padding()
                 
                 
                 
 
             }
-            .navigationTitle("Fish Name")
-            .toolbar {
+            .navigationTitle(fishie.fish_name)
+            //.navigationBarTitleDisplayMode(.inline)
+
+            /*.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         withAnimation {
@@ -66,14 +84,13 @@ struct FishData: View {
                     })
                     
                 }
-            }
+            }*/
         }
-    }
 }
 
-struct FishData_Previews: PreviewProvider {
+struct FishDataView_Previews: PreviewProvider {
     static var previews: some View {
-        FishData()
+        FishDataView(fishie: fishies[1])
     }
 }
 
