@@ -17,7 +17,11 @@ struct FishSearchView: View {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
         //Use this if NavigationBarTitle is with displayMode = .inline
-        //UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.seaBlue]
+        
+        
+        Theme.navigationBarColors(background: .seaBlue, titleColor: .white)
+
     }
     var body: some View {
         

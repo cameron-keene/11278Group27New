@@ -17,6 +17,10 @@ struct HomeView: View {
         //UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
     }
     
+    let fish1 = random(fishies.count-1)
+    let fish2 = random(fishies.count-1)
+    let fish3 = random(fishies.count-1)
+
     
     var body: some View {
         
@@ -37,9 +41,18 @@ struct HomeView: View {
                         .bold()
                     
                     HStack{
-                        FishIconView(image: Image("SampleFish"))
-                        FishIconView(image: Image("SampleFish"))
-                        FishIconView(image: Image("SampleFish"))
+                        NavigationLink(destination: FishDataView(fishie: fishies[fish1])) {
+                            FishIconView(fishie: fishies[fish1])
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        NavigationLink(destination: FishDataView(fishie: fishies[fish2])) {
+                            FishIconView(fishie: fishies[fish2])
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        NavigationLink(destination: FishDataView(fishie: fishies[fish3])) {
+                            FishIconView(fishie: fishies[fish3])
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     
                     Divider()
