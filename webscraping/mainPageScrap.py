@@ -16,6 +16,8 @@ species_appearence = []
 species_habitat = []
 species_behavior = []
 species_additionalInfo = []
+species_image = []
+
 
 saltFishes = ["/jacks/african-pompano/"
 ,"/jacks/almaco-jack/"
@@ -161,6 +163,13 @@ for saltFish in saltFishes:
 
     scientific = species.find("h2").text.strip()
 
+    img = soup.find("div", class_ = "species-banner-content")
+    img = img.get('data-background-src').split("?",1)
+    img = img[0]
+    img = "https://myfwc.com" + img
+    # print(img, end = "\n")
+    species_image.append(img)
+
     #print(name, end="\n")
     species_name.append(name)
     # print(scientific, end="\n"*2)
@@ -195,15 +204,6 @@ for saltFish in saltFishes:
     species_behavior.append(behavior_element)
     species_additionalInfo.append(additional_element)
 
-
-
-    # print( (species_name[x]), end= "\n")
-    # print(species_scientific[x], end= "\n")
-    # print(species_status[x], end= "\n")
-    # print(species_appearence[x], end= "\n")
-    # print(species_habitat[x], end= "\n")
-    # print(species_behavior[x], end= "\n")
-    # print(species_additionalInfo[x], end= "\n") 
     
     x += 1
 
@@ -211,7 +211,6 @@ for saltFish in saltFishes:
 freshFishes = ["american-eel/"
 ,"american-shad/"
 ,"arapaima/"
-,"atlantic-sturgeon/"
 ,"black-acara/"
 ,"black-crappie/"
 ,"blackmouth-shiner/"
@@ -234,19 +233,16 @@ freshFishes = ["american-eel/"
 ,"grass-carp/"
 ,"harlequin-darter/"
 ,"jaguar-guapote/"
-,"key-silverside/"
 ,"lake-eustis-pupfish/"
 ,"largemouth-bass/"
 ,"mayan-cichlid/"
 ,"midas-cichlid/"
-,"okaloosa-darter/"
 ,"oscar/"
 ,"piranha/"
 ,"redbreast-sunfish/"
 ,"redear-sunfish/"
 ,"sailfin-catfish/"
 ,"shoal-bass/"
-,"shortnose-sturgeon/"
 ,"southern-tesselated-darter/"
 ,"spotted-bass/"
 ,"spotted-sunfish/"
@@ -278,6 +274,13 @@ for freshFish in freshFishes:
     try: scientific = species.find("h2").text.strip()
     except AttributeError: 
         scientific = " "
+
+    img = soup.find("div", class_ = "species-banner-content")
+    img = img.get('data-background-src').split("?",1)
+    img = img[0]
+    img = "https://myfwc.com" + img
+    # print(img, end = "\n")
+    species_image.append(img)
 
     # print(name, end="\n")
     species_name.append(name)
@@ -336,6 +339,7 @@ fishes = pd.DataFrame({
     "fish_habitat" : species_habitat,
     "fish_behavior" : species_behavior,
     "fish_additional" : species_additionalInfo,
+    "fish_img" : species_image,
 })
 
 print(len(species_name))
@@ -345,5 +349,6 @@ print(len(species_appearence))
 print(len(species_habitat))
 print(len(species_behavior))
 print(len(species_additionalInfo))
+print(len(species_image))
 
 fishes.to_csv('fish_data_main.csv')
