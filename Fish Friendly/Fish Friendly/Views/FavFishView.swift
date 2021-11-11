@@ -19,6 +19,9 @@ struct FavFishView: View {
         //Use this if NavigationBarTitle is with displayMode = .inline
         //UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
     }
+    
+    @State var searchText = ""
+    
     var body: some View {
         
         NavigationView {
@@ -39,9 +42,9 @@ struct FavFishView: View {
             
                 ScrollView {
                     
-                    SearchBarView(text: .constant(""))
+                    SearchBarView(text: $searchText)
                     
-                    MultiIconView()
+                    MultiIconView(searchTerm: searchText)
                         .navigationTitle("Favorite Fish")
                         .toolbar {
                             ToolbarItem(placement: .navigationBarLeading) {

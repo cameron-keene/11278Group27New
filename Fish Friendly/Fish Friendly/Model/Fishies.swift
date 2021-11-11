@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Fishie: Hashable, Codable {  //id needed Identifiable
+struct Fishie: Equatable, Hashable, Codable {  //id needed Identifiable
     //var id: Int
     var fish_name: String
     var fish_scientific: String

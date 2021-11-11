@@ -23,29 +23,23 @@ struct FishSearchView: View {
         Theme.navigationBarColors(background: .seaBlue, titleColor: .white)
 
     }
+    
+    @State var searchText = ""
+    
     var body: some View {
+        
         
         NavigationView {
             
             ZStack {
                 Color.seaBlue
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
-                /*VStack {
-                Spacer()
-                Rectangle()
-                    .fill(Color.white)
-                    //.stroke(Color.white, lineWidth: 10)
-                    .frame(width: 370, height: 535, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    //.clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
-                
-                }*/
+                    .edgesIgnoringSafeArea(.all)
             
                 ScrollView {
                     
-                    SearchBarView(text: .constant(""))
+                    SearchBarView(text: $searchText)
                     
-                    MultiIconView()
+                    MultiIconView(searchTerm: searchText)
                         .navigationTitle("Search Fish")
                         .toolbar {
                             ToolbarItem(placement: .navigationBarLeading) {
