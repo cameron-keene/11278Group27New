@@ -18,12 +18,15 @@ struct MultiIconView: View {
     var body: some View {
         ScrollView {
                     LazyVGrid(columns: columns) {
-                        ForEach((0...fishies.count-1).filter({"\($0)".contains(searchTerm) || searchTerm.isEmpty}), id: \.self)
+                        ForEach((0...fishies.count-1), id: \.self)
                             { index in
-                            NavigationLink(destination: FishDataView(fishie: fishies[index])) {
-                                FishIconView(fishie: fishies[index])
+                            if (fishies[index].fish_name.contains(searchTerm) || searchTerm.isEmpty){
+                                NavigationLink(destination: FishDataView(fishie: fishies[index])) {
+                                    FishIconView(fishie: fishies[index])
+                                }
+                                .buttonStyle(PlainButtonStyle())
                             }
-                            .buttonStyle(PlainButtonStyle())
+                            
                         }
 
                     }
