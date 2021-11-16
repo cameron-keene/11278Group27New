@@ -22,6 +22,7 @@
 		33700D59272734EA007C529F /* ImportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33700D58272734EA007C529F /* ImportData.swift */; };
 		33700D5B272745A4007C529F /* FishIconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33700D5A272745A4007C529F /* FishIconImage.swift */; };
 		338D9863271D29D400982FAE /* FavFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D9862271D29D400982FAE /* FavFishView.swift */; };
+		33C6D2DE2744222800093414 /* YouAndEnvImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6D2DD2744222800093414 /* YouAndEnvImage.swift */; };
 		33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E32271D0DF400827899 /* FishIconView.swift */; };
 		33DD1E35271D12BC00827899 /* MultiIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E34271D12BC00827899 /* MultiIconView.swift */; };
 		33DD1E37271D153200827899 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD1E36271D153200827899 /* SearchBarView.swift */; };
@@ -68,6 +69,7 @@
 		33700D58272734EA007C529F /* ImportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportData.swift; sourceTree = "<group>"; };
 		33700D5A272745A4007C529F /* FishIconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIconImage.swift; sourceTree = "<group>"; };
 		338D9862271D29D400982FAE /* FavFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFishView.swift; sourceTree = "<group>"; };
+		33C6D2DD2744222800093414 /* YouAndEnvImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAndEnvImage.swift; sourceTree = "<group>"; };
 		33DD1E32271D0DF400827899 /* FishIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIconView.swift; sourceTree = "<group>"; };
 		33DD1E34271D12BC00827899 /* MultiIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiIconView.swift; sourceTree = "<group>"; };
 		33DD1E36271D153200827899 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				3328DC302718E5B200FEE422 /* FishDataView.swift */,
 				33DD1E32271D0DF400827899 /* FishIconView.swift */,
 				33DD1E36271D153200827899 /* SearchBarView.swift */,
+				33C6D2DD2744222800093414 /* YouAndEnvImage.swift */,
 				33DD1E34271D12BC00827899 /* MultiIconView.swift */,
 				338D9862271D29D400982FAE /* FavFishView.swift */,
 			);
@@ -337,6 +340,7 @@
 				33DD1E39271D182D00827899 /* HomeView.swift in Sources */,
 				33DD1E33271D0DF400827899 /* FishIconView.swift in Sources */,
 				33700D5B272745A4007C529F /* FishIconImage.swift in Sources */,
+				33C6D2DE2744222800093414 /* YouAndEnvImage.swift in Sources */,
 				3328DC3B27192A0000FEE422 /* FishImage.swift in Sources */,
 				3328DC312718E5B200FEE422 /* FishDataView.swift in Sources */,
 				3328DC372719249B00FEE422 /* FishSearchView.swift in Sources */,

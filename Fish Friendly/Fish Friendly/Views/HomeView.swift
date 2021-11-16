@@ -77,12 +77,38 @@ struct HomeView: View {
                         .font(.title2)
                         .bold()
 
-
+                    VStack {
+                        
+                        HStack{
+                        Spacer()
+                        Link(destination: URL(string: "https://oceanconservancy.org/protecting-florida/")!) {
+                            
+                            YouAndEnvImage(image: Image("YouAndEnv"))
+                            
+                            //Spacer()
+                        }
+                            Spacer()
+                        }
+                        
+                        Link(destination: URL(string: "https://www.nature.org/en-us/about-us/where-we-work/united-states/florida/stories-in-florida/florida-fresh-water/")!) {
+                            
+                            YouAndEnvImage(image: Image("YouAndEnv2"))
+                            
+                            //Spacer()
+                        }
+                        
+                        Link(destination: URL(string: "https://wildlifeflorida.org/current-initiatives/")!) {
+                            
+                            YouAndEnvImage(image: Image("YouAndEnv3"))
+                            
+                            //Spacer()
+                        }
+                    }
         
                     Spacer()
                     
                 }
-                .padding(10)
+                .padding(50)
                 
                 
                 
