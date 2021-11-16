@@ -25,10 +25,11 @@ struct HomeView: View {
     var body: some View {
         
         NavigationView {
+            
             ZStack {
-                Color.seaBlue
+                Color.white
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
+                ScrollView{
                 Rectangle()
                     .fill(Color.white)
                     //.stroke(Color.white, lineWidth: 10)
@@ -76,16 +77,39 @@ struct HomeView: View {
                     Text("You & the Environment")
                         .font(.title2)
                         .bold()
-
-
+                    
+                        
+                        VStack {
+                            Link(destination: URL(string: "https://oceanconservancy.org/protecting-florida/")!) {
+                                
+                                YouAndEnvImage(image: Image("YouAndEnv"))
+                                
+                                //Spacer()
+                            }
+                            
+                            Link(destination: URL(string: "https://www.nature.org/en-us/about-us/where-we-work/united-states/florida/stories-in-florida/florida-fresh-water/")!) {
+                                
+                                YouAndEnvImage(image: Image("YouAndEnv2"))
+                                
+                                //Spacer()
+                            }
+                            
+                            Link(destination: URL(string: "https://wildlifeflorida.org/current-initiatives/")!) {
+                                
+                                YouAndEnvImage(image: Image("YouAndEnv3"))
+                                
+                                //Spacer()
+                            }
+                        }
         
                     Spacer()
                     
                 }
-                .padding(10)
+                .padding(50)
+
                 
                 
-                
+            }
             }
             .navigationTitle("Fish Friendly")
             .toolbar {
@@ -99,7 +123,7 @@ struct HomeView: View {
                 }
             }
             
-            
+ 
             
         }
         
