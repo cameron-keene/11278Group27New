@@ -80,11 +80,16 @@ struct HomeView: View {
                     
                         
                         VStack {
+                            
+                            HStack{
+                            Spacer()
                             Link(destination: URL(string: "https://oceanconservancy.org/protecting-florida/")!) {
                                 
                                 YouAndEnvImage(image: Image("YouAndEnv"))
                                 
                                 //Spacer()
+                            }
+                                Spacer()
                             }
                             
                             Link(destination: URL(string: "https://www.nature.org/en-us/about-us/where-we-work/united-states/florida/stories-in-florida/florida-fresh-water/")!) {
