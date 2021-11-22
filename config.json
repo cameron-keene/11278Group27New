@@ -1,7 +1,7 @@
 {
-    "project-name": "The Team's Project Name",
-    "description": "A description.",
+    "project-name": "Fish Friendly",
+    "description": "An educational application that shows fish information to help educate users on the wildlife and their native status.",
     "tas": ["Whoever", "Were", "The", "TAs", "Supervising", "The", "Project"],
-    "members": ["Students", "Who", "Contributed"],
-    "images": ["Spring21_periodNum_groupName_1.gif", "Spring21_periodNum_groupName_2.gif", "Spring21_periodNum_groupName_3.gif"]
+    "members": ["Sijia Li", "Cameron Keene", "Natalie Nguyen", "Diya Yang"],
+    "images": ["Spring21_Group27_GoFish_1.gif", "Spring21__Group27_GoFish_2.gif", "Spring21_Group27_GoFish_3.gif"]
 }
