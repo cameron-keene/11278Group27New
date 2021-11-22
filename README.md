@@ -1,4 +1,3 @@
-#README:
 ## How to run our app 
 ## 1. Download Xcode
 ## 2. Open folder 11278Group27New
