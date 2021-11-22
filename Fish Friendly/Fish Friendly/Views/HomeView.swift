@@ -39,6 +39,7 @@ struct HomeView: View {
                     Text("Spotlight")
                         .font(.title2)
                         .bold()
+                        .padding(1)
                     
                     HStack{
                         NavigationLink(destination: FishDataView(fishie: fishies[fish1])) {

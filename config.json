@@ -1,0 +1,7 @@
+{
+    "project-name": "The Team's Project Name",
+    "description": "A description.",
+    "tas": ["Whoever", "Were", "The", "TAs", "Supervising", "The", "Project"],
+    "members": ["Students", "Who", "Contributed"],
+    "images": ["Spring21_periodNum_groupName_1.gif", "Spring21_periodNum_groupName_2.gif", "Spring21_periodNum_groupName_3.gif"]
+}
